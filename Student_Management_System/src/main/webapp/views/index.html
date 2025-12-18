@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Student Management</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h2>Student Management System</h2>
+<a href="/add">Add New Student</a>
+<table>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Course</th>
+<th>Batch</th>
+</tr>
+<tr th:each="s : ${students}">
+<td th:text="${s.studentId}"></td>
+<td th:text="${s.studentName}"></td>
+<td th:text="${s.studentEmail}"></td>
+<td th:text="${s.studentCourse}"></td>
+<td th:text="${s.batchNumber}"></td>
+</tr>
+</table>
+</body>
+</html>
