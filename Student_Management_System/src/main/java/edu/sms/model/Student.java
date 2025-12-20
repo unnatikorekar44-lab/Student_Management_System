@@ -11,9 +11,9 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int studentId;
-	private String studentName;
+	private String studentFullName;
 	private String studentEmail;
-	private String studentCollegeName;
+	private String studentCollageName;
 	private int studentAge;
 	private String studentCourse;
 	private String batchNumber;
@@ -27,11 +27,11 @@ public class Student {
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
-	public String getStudentName() {
-		return studentName;
+	public String getStudentFullName() {
+		return studentFullName;
 	}
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
+	public void setStudentFullName(String studentFullName) {
+		this.studentFullName = studentFullName;
 	}
 	public String getStudentEmail() {
 		return studentEmail;
@@ -39,11 +39,12 @@ public class Student {
 	public void setStudentEmail(String studentEmail) {
 		this.studentEmail = studentEmail;
 	}
-	public String getStudentCollegeName() {
-		return studentCollegeName;
+	
+	public String getStudentCollageName() {
+		return studentCollageName;
 	}
-	public void setStudentCollegeName(String studentCollegeName) {
-		this.studentCollegeName = studentCollegeName;
+	public void setStudentCollageName(String studentCollageName) {
+		this.studentCollageName = studentCollageName;
 	}
 	public int getStudentAge() {
 		return studentAge;

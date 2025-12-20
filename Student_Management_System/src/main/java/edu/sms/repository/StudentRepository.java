@@ -8,5 +8,7 @@ import edu.sms.model.Student;
 
 public interface StudentRepository extends JpaRepository<Student, Integer>{
 
+	public List<Student> findByBatchNumber(String batchNumber);
+
 
 }
